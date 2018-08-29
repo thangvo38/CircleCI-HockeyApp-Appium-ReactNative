@@ -1,0 +1,7 @@
+port: <PORT>
+circleci_repo_config:
+  circleci_token: <YOUR_CIRCLECI_TOKEN>
+  vcs_type: <YOUR_VCS_TYPE>
+  org: <YOUR_PROJECT_ORGANIZATION>
+  repo: <YOUR_PROJECT_REPOSITORY>
+  branch: <PROJECT_BRANCH>
