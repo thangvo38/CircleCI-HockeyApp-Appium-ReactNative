@@ -37,8 +37,7 @@ To get your Kobiton Username and API Key, follow instruction at `IV. Configure T
 
 ### 3. Samples
 In this repository, we have already provided samples for executing automation test in Kobiton:
-- Script for executing automation test on Kobiton iOS devices (`/samples/automation-test/ios-app-test.js`).
-- Script for executing automation test on Kobiton Android devices (`/samples/automation-test/android-app-test.js`).
+- Script for executing automation test on Kobiton devices (`/samples/automation-test/automation-test-script.js`).
 - CircleCI configuration file (`/.circleci/config.yml`).
 - Script for initiating WebHook server (`/samples/webhook-server/webhook_server.rb`).
 - WebHook server configuration file (`/samples/webhook-server/config.yml`).
@@ -69,9 +68,7 @@ Your `Environment Variables` window should look like this
 ### 2. Getting Kobiton device desired capabilities
 In order to interact with a specific device in Kobiton, its corresponding desired capabilities needs to be supplied. 
 
-In the provided sample automation test script, we have pre-configured them to execute automation test of the provided application(s) from value of `APP_URL` environment variable, and check if **ONLY** the `platformName` is supplied; if it is supplied with `iOS` or `Android`, the test will be executed on one of the available devices names of which begin with `iPhone` or `Android`. If you want to use other specific device(s), follow the instruction below to get the corresponding desired capabilities for that device(s).
-
-The provided sample automation test script is pre-configured to execute automation test of application(s) requested from WebHook server. It will execute on device(s) matching the provided desired capabilities or on one of any available devices whose names begin with `iPhone` if being executed on `iOS` or `Galaxy` if on `Android`.
+In the provided sample automation test script, we have pre-configured them to execute automation test of the provided application(s) from `APP_URL` environment variable, and execute the tests on one of available devices which name begins with `iPhone` or `Android` if **ONLY** platform name is supplied in desired capabilities.
 
 **How to get desired capabilities**
 
